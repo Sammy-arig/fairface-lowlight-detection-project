@@ -21,6 +21,9 @@ https://github.com/dchen236/FairFace
 Pretrained model res34_fair_align_multi_7_20190809.pt
 https://drive.google.com/file/d/11y0Wi3YQf21a_VcspUV4FwqzhMcfaVAB/view?usp=sharing
 
+fairface_alldata_4race_20191111.pt
+https://drive.google.com/file/d/1fUJSLseDpgilArB_YKep9PnsR7QrPW5I/view?usp=sharing
+
 ## Data
 
 Images (train + validation set): 
