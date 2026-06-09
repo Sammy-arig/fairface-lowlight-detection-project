@@ -1,41 +1,20 @@
-# FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age
+Bias & Fairness in Object Detection using YOLOv8
+## References
 
-The paper: https://openaccess.thecvf.com/content/WACV2021/papers/Karkkainen_FairFace_Face_Attribute_Dataset_for_Balanced_Race_Gender_and_Age_WACV_2021_paper.pdf
+### FairFace Dataset
 
-Karkkainen, K., & Joo, J. (2021). FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age for Bias Measurement and Mitigation. In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (pp. 1548-1558).
+📄 FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age
+https://openaccess.thecvf.com/content/WACV2021/papers/Karkkainen_FairFace_Face_Attribute_Dataset_for_Balanced_Race_Gender_and_Age_WACV_2021_paper.pdf
 
-If you use our dataset or model in your paper, please cite:
+### Project Report
 
-        @inproceedings{karkkainenfairface,
-          title={FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age for Bias Measurement and Mitigation},
-          author={Karkkainen, Kimmo and Joo, Jungseock},
-          booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
-          year={2021},
-          pages={1548--1558}
-        }
+📄 Read the Full Project Report
+https://github.com/Sammy-arig/fairface-lowlight-detection-project/blob/main/object_detection_paper.pdf
 
-## Code & model
+Developed a computer vision research project to evaluate fairness and demographic bias in YOLOv8 face/object detection across different racial groups using the FairFace dataset. The project compared baseline detection performance with low-light stress testing to analyze how environmental conditions affect detection accuracy and fairness metrics.
 
-https://github.com/dchen236/FairFace
+Implemented image preprocessing, low-light simulation, confidence analysis, and demographic-wise performance evaluation using Python and YOLOv8. Measured detection rate, false negative rate, demographic parity gap, and equalized odds across seven demographic groups.
 
-Pretrained model res34_fair_align_multi_7_20190809.pt
-https://drive.google.com/file/d/11y0Wi3YQf21a_VcspUV4FwqzhMcfaVAB/view?usp=sharing
+Results showed near-perfect detection under standard conditions, while low-light environments introduced measurable disparities across certain groups, highlighting the importance of fairness auditing in real-world AI deployment.
 
-fairface_alldata_4race_20191111.pt
-https://drive.google.com/file/d/1fUJSLseDpgilArB_YKep9PnsR7QrPW5I/view?usp=sharing
-
-## Data
-
-Images (train + validation set): 
-[\[Padding=0.25\]](https://drive.google.com/file/d/1Z1RqRo0_JiavaZw2yzZG6WETdZQ8qX86/view?usp=sharing), 
-[\[Padding=1.25\]](https://drive.google.com/file/d/1g7qNOZz9wC7OfOhcPqH1EZ5bk1UFGmlL/view?usp=sharing)
-
-* We used dlib's [get_face_chip()](http://dlib.net/python/index.html#dlib.get_face_chip) to crop and align faces with padding = 0.25 in the main experiments (less margin) and padding = 1.25 for the bias measument experiment for commercial APIs. 
-
-
-Labels: 
-[Train](https://drive.google.com/file/d/1i1L3Yqwaio7YSOCj7ftgk8ZZchPG7dmH/view?usp=sharing)
-[Validation](https://drive.google.com/file/d/1wOdja-ezstMEp81tX1a-EYkFebev4h7D/view?usp=sharing)
-
-
-License: CC BY 4.0
+Tech Stack: Python, YOLOv8, OpenCV, Pandas, NumPy, Matplotlib, Deep Learning, Computer Vision
